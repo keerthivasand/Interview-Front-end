@@ -1,11 +1,26 @@
 @import 'config/**/*.scss';
+@import '_base';
+@import '_header';
+@import '_banner';
+@import '_grid';
+@import '_testimonial';
+@import '_contact';
+@import '_footer';
 
 html {
   height: 100%;
   font-size: 16px;
+  font-family: sans-serif;
 }
 
 body {
   font-size: 100%;
+  font-family: $font-family;
   display: flex;
+  color: $font-color;
+  min-height: 100vh;
+  flex-direction: column;
+  &.menu-open {
+    overflow: hidden;
+  }
 }

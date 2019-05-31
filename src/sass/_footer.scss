@@ -1,0 +1,37 @@
+@import '_mixins';
+
+.footer {
+  background-color: $header;
+  color: #afa5a3;
+  padding: 25px 0;
+  .footer-left,
+  .footer-right {
+    @media (max-width: 767px) {
+      float: none;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  .follow-wrap {
+    @media (max-width: 767px) {
+      float: none;
+    }
+  }
+  ul.social-follow {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+    li {
+      display: inline-block;
+      font-size: 0;
+      i {
+        font-size: 18px;
+        margin-right: 4px;
+      }
+    }
+  }
+}

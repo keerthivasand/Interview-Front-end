@@ -1,0 +1,12 @@
+{% macro input(name, type, classes, placeholder, value, size) %}    
+    <div class="field-container {{ classes }}">        
+        <input type="{{ type|default('text') }}" name="{{ name }}" placeholder="{{ placeholder|default(name|title) }}" value="{{ value|e }}" size="{{ size|default(20) }}"/>        
+    </div>
+{% endmacro %}
+
+{% macro textarea(placeholder, rows, classes) %}   
+    <div class="field-container {{ classes }}">   
+       <textarea placeholder="{{ placeholder|default(name|title) }}" rows="{{ rows|default(8) }}"></textarea>        
+    </div>
+{% endmacro %}
+

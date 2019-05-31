@@ -28,7 +28,7 @@ gulp.task('sass', () => {
       })
     )
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('stylelint', () => {
@@ -43,7 +43,7 @@ gulp.task('babel', () => {
   return gulp
     .src('src/js/*.js')
     .pipe(babel())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('eslint', () => {

@@ -1,0 +1,18 @@
+{% import "forms.twig" as forms %}
+<fieldset>
+    <div class="grd-row">
+        <div class="grd-3-col">
+        {{ forms.input('Full Name','text','full-name mb','Full Name') }}    
+        </div> 
+         <div class="grd-3-col">
+        {{ forms.input('Email Address','email','email mb','Email Address') }}  
+        </div>   
+        <div class="grd-3-col">
+        {{ forms.input('Phone Number','number','phone-number mb','Phone Number') }}
+        </div>    
+    </div>
+    <div class="grd-row">
+        {{ forms.textarea('Enter your message here', '5', 'message grd-auto') }}
+    </div>
+    {{ forms.input('Submit','submit','submit','','Submit') }}
+</fieldset>

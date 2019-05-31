@@ -1,0 +1,31 @@
+.block-contact {
+  position: relative;
+  background: url('../images/footer-bg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0;
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 80px 0;
+  }
+  .block-title {
+    text-align: center;
+    color: #fff;
+    p {
+      font-size: 1.25em;
+    }
+  }
+  fieldset {
+    border: 0;
+    max-width: 800px;
+    margin: 30px auto;
+    .message {
+      margin-top: 5px;
+    }
+    .submit {
+      margin-top: 20px;
+    }
+  }
+}

@@ -38,5 +38,8 @@
     "stylelint": "^10.0.1",
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-scss": "^3.5.4"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
   }
 }
