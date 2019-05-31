@@ -1,23 +1,25 @@
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axelerant: Interview Frontend</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    {% include "03-organisms/header/header.twig" %}
-    <main class="body-wrapper">
-        {% include "02-molecules/block-banner/block-banner.twig" %}
-        {% include "03-organisms/about/about.twig" %}
-        {% include "03-organisms/testimonial/testimonial.twig" %}
-        {% include "02-molecules/contact-form/contact-form.twig" %}
-    </main>
-    {% include "03-organisms/footer/footer.twig" %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Axelerant: Interview Frontend</title>    
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        {% include "03-organisms/header/header.twig" %}
+        <main class="body-wrapper">
+            {% include "02-molecules/block-banner/block-banner.twig" %}
+            {% include "03-organisms/about/about.twig" %}
+            {% include "03-organisms/testimonial/testimonial.twig" %}
+            {% include "02-molecules/contact-form/contact-form.twig" %}
+        </main>
+        {% include "03-organisms/footer/footer.twig" %}
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

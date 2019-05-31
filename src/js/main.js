@@ -1,3 +1,5 @@
+/*eslint-env jquery*/
+
 (function global() {
   $(document).ready(function() {
     /**Menu Toggle */
@@ -25,6 +27,15 @@
       }
     });
 
+    $('.get-tch').click(function() {
+      $('html, body').animate(
+        {
+          scrollTop: $($(this).attr('href')).offset().top - 80
+        },
+        2000
+      );
+    });
+
     /**Single Click for Menu for Touch device */
 
     function subMenuTouch() {
@@ -40,7 +51,27 @@
 
     $('.testimonial-slide').slick({
       dots: false,
-      arrows: false
+      arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
   });
 })();
